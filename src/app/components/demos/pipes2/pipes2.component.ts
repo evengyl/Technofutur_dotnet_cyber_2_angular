@@ -13,4 +13,6 @@ export class Pipes2Component {
     remiseNet : 1999.99
   }
 
+  public powerPipe : number = 42
+
 }

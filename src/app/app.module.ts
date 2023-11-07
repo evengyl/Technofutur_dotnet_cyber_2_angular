@@ -14,7 +14,8 @@ import { Pipes2Component } from './components/demos/pipes2/pipes2.component';
 
 
 import { registerLocaleData } from '@angular/common';
-import localFr from "@angular/common/locales/fr-BE"
+import localFr from "@angular/common/locales/fr-BE";
+import { CustomPipePowPipe } from './components/demos/pipes2/custom-pipe-pow.pipe'
 
 registerLocaleData(localFr)
 
@@ -28,7 +29,8 @@ registerLocaleData(localFr)
     Bindings1Component,
     Exos01Component,
     FourOfourComponent,
-    Pipes2Component
+    Pipes2Component,
+    CustomPipePowPipe
   ],
   imports: [
     BrowserModule,
