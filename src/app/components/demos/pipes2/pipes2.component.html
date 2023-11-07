@@ -1,1 +1,31 @@
-<p>pipes2 works!</p>
+<h2>Les pipes et les pipes custom</h2>
+
+<div class="row">
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p>Titre de la promos Avant : {{allDatasInObject.titlePromos}}</p>
+                <p>Titre de la promos Après : {{allDatasInObject.titlePromos | uppercase}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p>Date de début Avant : {{allDatasInObject.dateDebut}}</p>
+                <p>Date de début Après : {{allDatasInObject.dateDebut | date : "dd-MM-yyyy"}}</p>
+                <p>Date de début Après : {{allDatasInObject.dateDebut | date : "full"}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p>Remise Net Avant : {{allDatasInObject.remiseNet}}</p>
+                <p>Remise Net Après : {{allDatasInObject.remiseNet | currency : "USD"}}</p>
+                <p>Remise Net Après : {{allDatasInObject.remiseNet | currency : "EUR"}}</p>
+                <p>Remise Net Après : {{allDatasInObject.remiseNet | currency : "JPY"}}</p>
+            </div>
+        </div>
+    </div>
+</div>

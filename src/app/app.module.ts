@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -11,6 +11,13 @@ import { FormsModule } from '@angular/forms';
 import { Exos01Component } from './components/exos/exos01/exos01.component';
 import { FourOfourComponent } from './components/demos/four-ofour/four-ofour.component';
 import { Pipes2Component } from './components/demos/pipes2/pipes2.component';
+
+
+import { registerLocaleData } from '@angular/common';
+import localFr from "@angular/common/locales/fr-BE"
+
+registerLocaleData(localFr)
+
 
 @NgModule({
   declarations: [
@@ -28,7 +35,9 @@ import { Pipes2Component } from './components/demos/pipes2/pipes2.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    { provide : LOCALE_ID, useValue : "fr-BE"}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

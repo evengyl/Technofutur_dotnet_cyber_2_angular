@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class Pipes2Component {
 
+  public allDatasInObject : any = {
+    titlePromos : "profitez de -50% sur tous les pignoufs",
+    dateDebut : new Date(),
+    remiseNet : 1999.99
+  }
+
 }
