@@ -50,6 +50,7 @@
                 <p>Valeur au carré {{powerPipe}} * {{powerPipe}} = {{ powerPipe | customPipePow }}</p>
                 <p>Valeur avec passage de l'exposant : {{ powerPipe | customPipePow : 4}}</p>
                 <p>Valeur avec passage de l'exposant + tvac : {{ powerPipe | customPipePow : 4 : 15.5 }}</p>
+                <p>Valeur avec passage de l'exposant + tva + texte : {{ powerPipe | customPipePow : 4 : 15.5 : ["TVA", "Comprise"] }}</p>
             </div>
         </div>
     </div>
