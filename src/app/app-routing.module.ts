@@ -5,12 +5,14 @@ import { Bindings1Component } from './components/demos/bindings1/bindings1.compo
 import { Exos01Component } from './components/exos/exos01/exos01.component';
 import { FourOfourComponent } from './components/demos/four-ofour/four-ofour.component';
 import { Pipes2Component } from './components/demos/pipes2/pipes2.component';
+import { Exos05Component } from './components/exos/exos05/exos05.component';
 
 const routes: Routes = [
   { path : "", component : HomeComponent},
   { path : "bindings1", component : Bindings1Component},
   { path : "exos01", component : Exos01Component},
   { path : "pipes2", component : Pipes2Component},
+  { path : "exos05", component : Exos05Component},
 
 
 
