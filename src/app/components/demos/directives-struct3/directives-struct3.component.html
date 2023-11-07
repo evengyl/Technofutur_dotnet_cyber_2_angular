@@ -1,0 +1,55 @@
+<h2>Les Directives structurelles</h2>
+
+<div class="row">
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Le *ngIf</span>
+                <button class="green btn" *ngIf="!open" (click)="openCloseDesc()">Afficher la description du piment Habanero</button>
+                <button class="orange btn" *ngIf="open" (click)="openCloseDesc()">Masquer</button>
+                
+                <p *ngIf="open" >Le piment Habanero est originaire du Mexique et fait partie 
+                    des piments les plus forts au monde. C'est un piment extrêmement piquant et brûlant,
+                    mais il est aussi très savoureux avec un arome tropical.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span class="card-title">Le *ngIf mais avec un Else</span>
+
+                <button class="green btn" (click)="connect()">Connection</button>
+
+                <p *ngIf="isConnect; else notLogged">
+                    welcome back ! pignouf
+                </p>
+
+                <ng-template #notLogged>
+                    <p>Please login ! pignouf</p>
+                </ng-template>
+
+            </div>
+        </div>
+    </div>
+    <div class="col s12">
+        <div class="card blue-grey darken-1">
+            <div class="card-content">
+                <span class="card-title">Le *ngFor</span>
+                <ul class="collection">
+                    <li class="collection-item" *ngFor="let piment of listPiments">
+                        {{ piment.name }} - {{ piment.scoville }} - {{ piment.categ}}
+                    </li>
+                    <!--
+                        <ul>
+                        forOf(piment of listPiments)
+                        {
+                            <li>{{ piment.name }} - {{ piment.scoville }} - {{ piment.categ}}</li>
+                        }
+                        </ul>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

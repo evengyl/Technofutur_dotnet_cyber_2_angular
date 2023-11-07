@@ -1,0 +1,31 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-directives-struct3',
+  templateUrl: './directives-struct3.component.html',
+  styleUrls: ['./directives-struct3.component.css']
+})
+export class DirectivesStruct3Component {
+
+  public open : boolean = true
+  public isConnect : boolean = false
+
+  public listPiments : any[] = [
+    { id : 1, name : "Poivron", scoville : "0 - 100", categ : "light" },
+    { id : 2, name : "Anaheim", scoville : "500 - 1000", categ : "light" },
+    { id : 3, name : "Ancho", scoville : "1000 - 1500", categ : "medium" },
+    { id : 4, name : "Chimayo", scoville : "2500 - 5000", categ : "medium" },
+    { id : 5, name : "Fatali", scoville : "125 000 - 325 000", categ : "hot" },
+    { id : 6, name : "Scorpion", scoville : "1 250 000", categ : "hot" },
+    { id : 7, name : "Regret", scoville : "9 000 000", categ : "extreme" },
+    { id : 8, name : "capsaïcine pur", scoville : "10 000 000 - 14 000 000", categ : "elemental" },
+  ]
+
+  openCloseDesc(){
+    this.open = !this.open
+  }
+
+  connect(){
+    this.isConnect = !this.isConnect
+  }
+}

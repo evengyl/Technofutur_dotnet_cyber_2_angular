@@ -18,7 +18,8 @@ import localFr from "@angular/common/locales/fr-BE";
 import { CustomPipePowPipe } from './components/demos/pipes2/custom-pipe-pow.pipe';
 import { Exos05Component } from './components/exos/exos05/exos05.component';
 import { BtcConverterPipe } from './components/exos/exos05/btc-converter.pipe';
-import { JhmsConverterPipe } from './components/exos/exos05/jhms-converter.pipe'
+import { JhmsConverterPipe } from './components/exos/exos05/jhms-converter.pipe';
+import { DirectivesStruct3Component } from './components/demos/directives-struct3/directives-struct3.component'
 
 registerLocaleData(localFr)
 
@@ -36,7 +37,8 @@ registerLocaleData(localFr)
     CustomPipePowPipe,
     Exos05Component,
     BtcConverterPipe,
-    JhmsConverterPipe
+    JhmsConverterPipe,
+    DirectivesStruct3Component
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { Exos01Component } from './components/exos/exos01/exos01.component';
 import { FourOfourComponent } from './components/demos/four-ofour/four-ofour.component';
 import { Pipes2Component } from './components/demos/pipes2/pipes2.component';
 import { Exos05Component } from './components/exos/exos05/exos05.component';
+import { DirectivesStruct3Component } from './components/demos/directives-struct3/directives-struct3.component';
 
 const routes: Routes = [
   { path : "", component : HomeComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path : "exos01", component : Exos01Component},
   { path : "pipes2", component : Pipes2Component},
   { path : "exos05", component : Exos05Component},
+  { path : "directiveStruct3", component : DirectivesStruct3Component},
 
 
 
