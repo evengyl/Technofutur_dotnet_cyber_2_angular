@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { Bindings1Component } from './components/bindings1/bindings1.component';
+import { HomeComponent } from './shared/compos/home/home.component';
+import { Bindings1Component } from './components/demos/bindings1/bindings1.component';
 import { Exos01Component } from './components/exos/exos01/exos01.component';
-import { FourOfourComponent } from './components/four-ofour/four-ofour.component';
+import { FourOfourComponent } from './components/demos/four-ofour/four-ofour.component';
 
 const routes: Routes = [
   { path : "", component : HomeComponent},
