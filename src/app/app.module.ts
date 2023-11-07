@@ -8,6 +8,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { Bindings1Component } from './components/bindings1/bindings1.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
+import { Exos01Component } from './components/exos/exos01/exos01.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NavbarComponent,
     FooterComponent,
-    Bindings1Component
+    Bindings1Component,
+    Exos01Component
   ],
   imports: [
     BrowserModule,

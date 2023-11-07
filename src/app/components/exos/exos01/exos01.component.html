@@ -1,0 +1,35 @@
+<h2>Exos 01 : les chronomètres</h2>
+
+
+<div class="row">
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p>Chrono 1 - En secondes : {{ timer1 }}</p>
+                <button (click)="startChrono1()" class="btn green">Start</button>
+                <button (click)="stopChrono(chrono1)" class="btn orange">Stop</button>
+                <button (click)="resetChrono1()" class="btn red">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p>Chrono 2 - En minutes secondes : {{ timer2Minutes }} : {{ timer2 }}</p>
+                <button (click)="startChrono2()" class="btn green">Start</button>
+                <button (click)="stopChrono(chrono2)" class="btn orange">Stop</button>
+                <button (click)="resetChrono2()" class="btn red">Reset</button>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <p>Chrono 3 - En minutes secondes millisec : {{ timer3Minutes }} : {{ timer3Secondes }} : {{ timer3Milli }}</p>
+                <button (click)="startChrono3()" class="btn green">Start</button>
+                <button (click)="stopChrono(chrono3)" class="btn orange">Stop</button>
+                <button (click)="resetChrono3()" class="btn red">Reset</button>
+            </div>
+        </div>
+    </div>
+</div>

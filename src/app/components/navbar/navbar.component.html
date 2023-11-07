@@ -1,19 +1,36 @@
 
 <!-- Dropdown Structure -->
-<ul id="dropdown1" class="dropdown-content">
+<ul id="dropdown_demos" class="dropdown-content">
     <li><a routerLink="bindings1">1 : Les différents Bindings</a></li>
     <li class="divider"></li>
 </ul>
+
+
+<ul id="dropdown_exos" class="dropdown-content">
+    <li><a routerLink="exos01">Exos 0.1 : Les chronomètres</a></li>
+    <li class="divider"></li>
+</ul>
+
 
 <nav>
     <div class="nav-wrapper">
         <a routerLink="" class="brand-logo">Logo</a>
         <ul class="right hide-on-med-and-down">
             <li>
-                <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+                <a class="dropdown-trigger" href="#!" data-target="dropdown_demos">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     Liste des démos Angular
+                    <i class="material-icons right">arrow_drop_down</i>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+            </li>
+            <li>
+                <a class="dropdown-trigger" href="#!" data-target="dropdown_exos">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Liste des exos Angular
                     <i class="material-icons right">arrow_drop_down</i>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
