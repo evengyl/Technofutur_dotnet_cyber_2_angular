@@ -19,7 +19,8 @@ import { CustomPipePowPipe } from './components/demos/pipes2/custom-pipe-pow.pip
 import { Exos05Component } from './components/exos/exos05/exos05.component';
 import { BtcConverterPipe } from './components/exos/exos05/btc-converter.pipe';
 import { JhmsConverterPipe } from './components/exos/exos05/jhms-converter.pipe';
-import { DirectivesStruct3Component } from './components/demos/directives-struct3/directives-struct3.component'
+import { DirectivesStruct3Component } from './components/demos/directives-struct3/directives-struct3.component';
+import { Exos1Component } from './components/exos/exos1/exos1.component'
 
 registerLocaleData(localFr)
 
@@ -38,7 +39,8 @@ registerLocaleData(localFr)
     Exos05Component,
     BtcConverterPipe,
     JhmsConverterPipe,
-    DirectivesStruct3Component
+    DirectivesStruct3Component,
+    Exos1Component
   ],
   imports: [
     BrowserModule,
