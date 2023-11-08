@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.p1{
+    padding:10px;
+}
+
+.p2{
+    padding:20px;
+}
+
+
+.m1{
+    margin:10px;
+}
+
+.m2{
+    margin:20px;
+}

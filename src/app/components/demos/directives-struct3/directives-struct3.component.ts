@@ -9,6 +9,9 @@ export class DirectivesStruct3Component {
 
   public open : boolean = true
   public isConnect : boolean = false
+  public afficheBoutDeLorem : boolean = false
+
+  public valueFilter : string = ""
 
   public listPiments : any[] = [
     { id : 1, name : "Poivron", scoville : "0 - 100", categ : "light" },
@@ -21,11 +24,24 @@ export class DirectivesStruct3Component {
     { id : 8, name : "capsaïcine pur", scoville : "10 000 000 - 14 000 000", categ : "elemental" },
   ]
 
+  listButtonsSorting : any[] = [
+    { humanName : "Light score", value : "light" },
+    { humanName : "Medium score", value : "medium" },
+    { humanName : "Hot score", value : "hot" },
+    { humanName : "Extreme score", value : "extreme" },
+    { humanName : "Elemental score", value : "elemental" },
+  ]
+
   openCloseDesc(){
     this.open = !this.open
   }
 
   connect(){
     this.isConnect = !this.isConnect
+  }
+
+
+  setFilterName(valueFilter : string){
+    this.valueFilter = valueFilter
   }
 }
