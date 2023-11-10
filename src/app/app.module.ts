@@ -22,7 +22,9 @@ import { JhmsConverterPipe } from './components/exos/exos05/jhms-converter.pipe'
 import { DirectivesStruct3Component } from './components/demos/directives-struct3/directives-struct3.component';
 import { Exos1Component } from './components/exos/exos1/exos1.component';
 import { Directives4Component } from './components/demos/directives4/directives4.component';
-import { ZoomitDirective, ZoomitEventDirective, ZoomitEventParamsDirective } from './components/demos/directives4/custom/zoomit.directive'
+import { ZoomitDirective, ZoomitEventDirective, ZoomitEventParamsDirective } from './components/demos/directives4/custom/zoomit.directive';
+import { TopPlayersComponent } from './components/demos/inputOutput5/top-players/top-players.component';
+import { PlayerComponent } from './components/demos/inputOutput5/player/player.component'
 
 registerLocaleData(localFr)
 
@@ -46,7 +48,9 @@ registerLocaleData(localFr)
     Directives4Component,
     ZoomitDirective,
     ZoomitEventDirective,
-    ZoomitEventParamsDirective
+    ZoomitEventParamsDirective,
+    TopPlayersComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,

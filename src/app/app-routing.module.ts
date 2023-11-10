@@ -9,6 +9,7 @@ import { Exos05Component } from './components/exos/exos05/exos05.component';
 import { DirectivesStruct3Component } from './components/demos/directives-struct3/directives-struct3.component';
 import { Exos1Component } from './components/exos/exos1/exos1.component';
 import { Directives4Component } from './components/demos/directives4/directives4.component';
+import { TopPlayersComponent } from './components/demos/inputOutput5/top-players/top-players.component';
 
 const routes: Routes = [
   { path : "", component : HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path : "directiveStruct3", component : DirectivesStruct3Component},
   { path : "exos1", component : Exos1Component},
   { path : "directives4", component : Directives4Component},
+  { path : "topPlayers5", component : TopPlayersComponent},
 
 
 
