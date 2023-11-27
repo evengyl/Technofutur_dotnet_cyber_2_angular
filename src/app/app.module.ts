@@ -1,6 +1,6 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HomeComponent } from './shared/compos/home/home.component';
 import { NavbarComponent } from './shared/compos/navbar/navbar.component';
@@ -25,7 +25,9 @@ import { Directives4Component } from './components/demos/directives4/directives4
 import { ZoomitDirective, ZoomitEventDirective, ZoomitEventParamsDirective } from './components/demos/directives4/custom/zoomit.directive';
 import { TopPlayersComponent } from './components/demos/inputOutput5/top-players/top-players.component';
 import { PlayerComponent } from './components/demos/inputOutput5/player/player.component';
-import { Services6Component } from './components/demos/services6/services6.component'
+import { Services6Component } from './components/demos/services6/services6.component';
+import { Httpclient7Component } from './components/demos/httpclient7/httpclient7.component';
+import { ViewPknDetailsComponent } from './components/demos/httpclient7/view-pkn-details/view-pkn-details.component'
 
 registerLocaleData(localFr)
 
@@ -52,12 +54,15 @@ registerLocaleData(localFr)
     ZoomitEventParamsDirective,
     TopPlayersComponent,
     PlayerComponent,
-    Services6Component
+    Services6Component,
+    Httpclient7Component,
+    ViewPknDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     { provide : LOCALE_ID, useValue : "fr-BE"}

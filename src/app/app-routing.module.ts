@@ -11,6 +11,8 @@ import { Exos1Component } from './components/exos/exos1/exos1.component';
 import { Directives4Component } from './components/demos/directives4/directives4.component';
 import { TopPlayersComponent } from './components/demos/inputOutput5/top-players/top-players.component';
 import { Services6Component } from './components/demos/services6/services6.component';
+import { Httpclient7Component } from './components/demos/httpclient7/httpclient7.component';
+import { ViewPknDetailsComponent } from './components/demos/httpclient7/view-pkn-details/view-pkn-details.component';
 
 const routes: Routes = [
   { path : "", component : HomeComponent},
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path : "directives4", component : Directives4Component},
   { path : "topPlayers5", component : TopPlayersComponent},
   { path : "services6", component : Services6Component},
+  { path : "httpclient7", component : Httpclient7Component},
+  { path : "detailsPkn/:namePkn", component : ViewPknDetailsComponent},
 
 
 

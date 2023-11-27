@@ -1,0 +1,23 @@
+<h2>Http Client : Call de l'api pokemon</h2>
+
+
+<div class="row">
+    <div class="col s12" *ngIf="counterTotal">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <button *ngIf="linkPrevious" class='btn orange' (click)="changeList('prev')">Voir les 20 précédents</button>
+                <button *ngIf="linkNext" class='btn orange' (click)="changeList('next')">Voir les 20 suivants</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col s3" *ngFor="let pkn of listPkn">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <span>{{ pkn.name | titlecase }}</span><br>
+                <a [routerLink]="['/detailsPkn', pkn.name]">Voir les détails de {{ pkn.name }}</a>
+            </div>
+        </div>
+    </div>
+</div>
